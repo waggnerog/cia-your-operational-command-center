@@ -16,11 +16,11 @@ const SolutionSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image - System Mockup */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative rounded-2xl overflow-hidden shadow-elevated">
+            <div className="relative rounded-2xl overflow-hidden shadow-elevated aspect-[4/3]">
               <img
                 src={ciaDashboardOffice}
                 alt="CIA - Console Integrado de Análise"
-                className="w-full h-auto object-cover"
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
             {/* Decorative elements */}
