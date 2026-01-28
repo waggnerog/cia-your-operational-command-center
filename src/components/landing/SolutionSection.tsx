@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import ciaMockup from "@/assets/cia-mockup.jpg";
+import ciaDashboardOffice from "@/assets/cia-dashboard-office.png";
 
 const benefits = [
   "Dados operacionais centralizados em uma única interface",
@@ -18,7 +18,7 @@ const SolutionSection = () => {
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <img
-                src={ciaMockup}
+                src={ciaDashboardOffice}
                 alt="CIA - Console Integrado de Análise"
                 className="w-full h-auto object-cover"
               />
