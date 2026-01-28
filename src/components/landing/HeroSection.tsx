@@ -22,7 +22,7 @@ const HeroSection = () => {
             <span className="text-xs font-medium text-secondary">Trade Marketing & Execução</span>
           </div>
           
-          <h1 className="text-display-sm md:text-display text-primary-foreground mb-6 text-balance">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-8 text-balance leading-tight">
             Controle total da sua{" "}
             <span className="text-secondary">operação de campo.</span>
           </h1>
