@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import retailStore from "@/assets/retail-store.jpg";
+import ciaMockup from "@/assets/cia-mockup.jpg";
 
 const benefits = [
   "Dados operacionais centralizados em uma única interface",
@@ -14,35 +14,18 @@ const SolutionSection = () => {
     <section id="solucao" className="section-padding">
       <div className="container-wide">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Image */}
+          {/* Image - System Mockup */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative rounded-2xl overflow-hidden">
+            <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <img
-                src={retailStore}
-                alt="Ponto de venda com operação em execução"
-                className="w-full h-auto object-cover aspect-[4/3]"
+                src={ciaMockup}
+                alt="CIA - Console Integrado de Análise"
+                className="w-full h-auto object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent" />
             </div>
-            {/* Stats overlay */}
-            <div className="absolute bottom-6 left-6 right-6 bg-card/95 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-border">
-              <div className="flex items-center justify-between text-sm">
-                <div>
-                  <p className="text-muted-foreground">Lojas atualizadas hoje</p>
-                  <p className="text-xl font-semibold text-foreground">332</p>
-                </div>
-                <div className="h-10 w-px bg-border" />
-                <div>
-                  <p className="text-muted-foreground">Fotos processadas</p>
-                  <p className="text-xl font-semibold text-foreground">2.371</p>
-                </div>
-                <div className="h-10 w-px bg-border" />
-                <div>
-                  <p className="text-muted-foreground">Efetividade</p>
-                  <p className="text-xl font-semibold text-secondary">94%</p>
-                </div>
-              </div>
-            </div>
+            {/* Decorative elements */}
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-secondary/10 rounded-2xl -z-10" />
+            <div className="absolute -top-4 -left-4 w-16 h-16 bg-primary/5 rounded-xl -z-10" />
           </div>
 
           {/* Content */}
