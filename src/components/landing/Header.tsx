@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logoCia} alt="CIA Logo" className="h-10 w-10 object-contain" />
+            <img src={logoCia} alt="CIA Logo" className="h-8 w-auto object-contain" />
             <div className="flex flex-col">
               <span className="text-lg font-semibold text-foreground tracking-tight">CIA</span>
               <span className="text-[10px] text-muted-foreground leading-none">Console Integrado de Análise</span>
