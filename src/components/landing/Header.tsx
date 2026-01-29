@@ -41,8 +41,18 @@ const Header = () => {
             <Button variant="ghost" size="sm" className="text-muted-foreground">
               Entrar
             </Button>
-            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-navy-light">
-              Solicitar Acesso
+            <Button 
+              size="sm" 
+              className="bg-primary text-primary-foreground hover:bg-navy-light"
+              asChild
+            >
+              <a 
+                href="https://wa.me/5511952855141?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20um%20representante%20sobre%20o%20CIA%20%E2%80%93%20Console%20Integrado%20de%20An%C3%A1lise.%20Podem%20entrar%20em%20contato%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Solicitar Acesso
+              </a>
             </Button>
           </div>
 
@@ -80,8 +90,18 @@ const Header = () => {
                 <Button variant="ghost" size="sm" className="justify-start text-muted-foreground">
                   Entrar
                 </Button>
-                <Button size="sm" className="bg-primary text-primary-foreground hover:bg-navy-light">
-                  Solicitar Acesso
+                <Button 
+                  size="sm" 
+                  className="bg-primary text-primary-foreground hover:bg-navy-light"
+                  asChild
+                >
+                  <a 
+                    href="https://wa.me/5511952855141?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20um%20representante%20sobre%20o%20CIA%20%E2%80%93%20Console%20Integrado%20de%20An%C3%A1lise.%20Podem%20entrar%20em%20contato%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Solicitar Acesso
+                  </a>
                 </Button>
               </div>
             </nav>
