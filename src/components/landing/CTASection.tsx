@@ -22,9 +22,16 @@ const CTASection = () => {
               <Button 
                 size="lg" 
                 className="bg-secondary text-secondary-foreground hover:bg-teal-dark group"
+                asChild
               >
-                Falar com Especialista
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <a 
+                  href="https://wa.me/5511952855141?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20um%20representante%20sobre%20o%20CIA%20%E2%80%93%20Console%20Integrado%20de%20An%C3%A1lise.%20Podem%20entrar%20em%20contato%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Falar com Especialista
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </a>
               </Button>
               <Button 
                 variant="outline" 
