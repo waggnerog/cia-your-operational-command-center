@@ -11,11 +11,11 @@ const Header = () => {
       <div className="container-wide px-6 lg:px-12">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <img src={logoCia} alt="CIA Logo" className="h-10 w-auto object-contain" />
-            <div className="flex flex-col">
-              <span className="text-xl font-semibold text-foreground tracking-tight leading-none">CIA</span>
-              <span className="text-[10px] text-muted-foreground leading-tight mt-0.5">Console Integrado de Análise</span>
+          <div className="flex items-center gap-3">
+            <img src={logoCia} alt="CIA Logo" className="h-12 w-auto object-contain" />
+            <div className="flex flex-col justify-center">
+              <span className="text-2xl font-semibold text-foreground tracking-tight leading-none">CIA</span>
+              <span className="text-[11px] text-muted-foreground leading-tight mt-0.5">Console Integrado de Análise</span>
             </div>
           </div>
 
