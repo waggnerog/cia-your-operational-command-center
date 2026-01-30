@@ -1,13 +1,4 @@
-import { Check } from "lucide-react";
 import ciaDashboardOffice from "@/assets/cia-dashboard-office.png";
-
-const benefits = [
-  "Dados operacionais centralizados em uma única interface",
-  "Visualização por região, bandeira ou período",
-  "Informação do campo em tempo real",
-  "Controle granular por perfil de acesso",
-  "Workspaces isolados por cliente",
-];
 
 const SolutionSection = () => {
   return (
@@ -31,30 +22,28 @@ const SolutionSection = () => {
           {/* Content */}
           <div className="order-1 lg:order-2">
             <p className="text-sm font-medium text-secondary uppercase tracking-wider mb-3">
-              A solução
+              O que é o CIA
             </p>
             <h2 className="text-heading md:text-display-sm text-foreground mb-6">
-              Um console para quem{" "}
-              <span className="text-secondary">decide</span> com base no campo.
+              Um console operacional para decidir com base no que{" "}
+              <span className="text-secondary">realmente aconteceu.</span>
             </h2>
-            <p className="text-body-lg text-muted-foreground mb-8">
-              O CIA organiza toda a informação operacional em uma interface pensada para 
-              análise e ação. Não é um dashboard genérico — é uma ferramenta construída 
-              por quem entende a rotina de quem vive trade marketing.
+            <p className="text-body-lg text-muted-foreground mb-6">
+              O CIA — Console Integrado de Análise — centraliza toda a execução operacional em um único ambiente.
             </p>
 
-            <ul className="space-y-4">
-              {benefits.map((benefit, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <div className="flex-shrink-0 mt-0.5">
-                    <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center">
-                      <Check className="h-3 w-3 text-secondary" />
-                    </div>
-                  </div>
-                  <span className="text-foreground">{benefit}</span>
-                </li>
-              ))}
-            </ul>
+            <div className="space-y-4 mb-8">
+              <p className="text-foreground">
+                <span className="font-semibold">Não é um BI genérico.</span>
+              </p>
+              <p className="text-foreground">
+                <span className="font-semibold">Não é um dashboard engessado.</span>
+              </p>
+            </div>
+
+            <p className="text-body text-muted-foreground border-l-2 border-secondary pl-4">
+              É um console usado diariamente por analistas e gestores que precisam transformar execução física em evidência clara, organizada e confiável.
+            </p>
           </div>
         </div>
       </div>

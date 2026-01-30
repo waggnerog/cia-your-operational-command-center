@@ -1,35 +1,29 @@
-import { Layers, Lock, Upload, Gauge, Database, Shield } from "lucide-react";
+import { Layers, Lock, Upload, Gauge, Database, TrendingUp } from "lucide-react";
 
 const differentials = [
   {
     icon: Layers,
-    title: "Multi-tenant nativo",
-    description: "Workspaces isolados por cliente. Dados nunca se misturam.",
+    title: "Workspaces por cliente",
   },
   {
     icon: Lock,
-    title: "Controle de acesso granular",
-    description: "Perfis de visualização por módulo, região ou cliente.",
+    title: "Controle de acesso por perfil",
   },
   {
     icon: Upload,
     title: "Upload único global",
-    description: "Carregue uma vez, distribua para todos os workspaces.",
   },
   {
     icon: Gauge,
     title: "Operação centralizada",
-    description: "Uma interface para gerenciar toda a cadeia de execução.",
   },
   {
     icon: Database,
     title: "Sem dependência de BI externo",
-    description: "Análises prontas, sem precisar exportar para outra ferramenta.",
   },
   {
-    icon: Shield,
-    title: "Dados protegidos",
-    description: "Infraestrutura segura, backups automáticos, conformidade.",
+    icon: TrendingUp,
+    title: "Estrutura pensada para escala e múltiplas operações",
   },
 ];
 
@@ -37,37 +31,28 @@ const DifferentialsSection = () => {
   return (
     <section id="diferenciais" className="section-padding bg-muted/50">
       <div className="container-narrow">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <p className="text-sm font-medium text-secondary uppercase tracking-wider mb-3">
-            Diferenciais
+            Diferenciais reais
           </p>
           <h2 className="text-heading md:text-display-sm text-foreground mb-4">
-            Não é mais uma ferramenta.{" "}
-            <span className="text-secondary">É a ferramenta.</span>
+            Controle operacional,{" "}
+            <span className="text-secondary">não narrativa.</span>
           </h2>
-          <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-            Construído com a expertise de quem conhece os desafios reais 
-            da execução no varejo brasileiro.
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {differentials.map((diff, index) => (
             <div
               key={index}
-              className="flex gap-4 p-5 rounded-xl bg-card border border-border hover:shadow-md transition-all duration-300"
+              className="flex items-center gap-4 p-5 rounded-xl bg-card border border-border hover:shadow-md hover:border-secondary/30 transition-all duration-300"
             >
               <div className="flex-shrink-0">
                 <div className="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center">
                   <diff.icon className="h-5 w-5 text-primary" />
                 </div>
               </div>
-              <div>
-                <h3 className="font-semibold text-foreground mb-1">{diff.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {diff.description}
-                </p>
-              </div>
+              <h3 className="font-medium text-foreground">{diff.title}</h3>
             </div>
           ))}
         </div>

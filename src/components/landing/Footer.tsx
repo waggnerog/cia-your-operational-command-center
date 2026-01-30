@@ -13,6 +13,9 @@ const Footer = () => {
               <span className="text-[10px] text-primary-foreground/60 leading-tight mt-0.5">
                 Console Integrado de Análise
               </span>
+              <span className="text-[9px] text-primary-foreground/40 leading-tight mt-1">
+                Sistema profissional para gestão de execução operacional.
+              </span>
             </div>
           </div>
 
