@@ -4,32 +4,32 @@ const modules = [
   {
     icon: Map,
     name: "Mapa da Operação",
-    description: "Visão consolidada por região, bandeira e período. Entenda onde sua equipe está atuando.",
+    description: "Visão clara da cobertura, lojas, rotas e execução real.",
   },
   {
     icon: Camera,
     name: "Fotos de Campo",
-    description: "Todas as fotos do PDV organizadas, com filtros e navegação rápida por loja ou data.",
+    description: "Registro visual contextualizado, rastreável e auditável.",
   },
   {
     icon: Target,
     name: "Efetividade",
-    description: "Acompanhamento da execução planejada vs. realizada. Métricas claras, sem interpretação.",
+    description: "Planejado versus realizado, sem ruído ou interpretação subjetiva.",
   },
   {
     icon: Navigation,
-    name: "Tracking de Pesquisa",
-    description: "Evolução semanal dos indicadores de pesquisa, comparativos por região e tendência.",
+    name: "Tracking",
+    description: "Acompanhamento contínuo da execução ao longo do tempo.",
   },
   {
     icon: Calendar,
     name: "Data Crítica",
-    description: "Controle de validade e ruptura. Alertas automáticos para ação preventiva.",
+    description: "Controle ativo de validade, ruptura e riscos operacionais.",
   },
   {
     icon: Phone,
     name: "Base de Telefones",
-    description: "Módulo core com contatos da operação. Atualização centralizada, acesso controlado.",
+    description: "O núcleo do sistema. Comunicação direta com quem executa.",
   },
 ];
 
@@ -39,16 +39,12 @@ const ModulesSection = () => {
       <div className="container-narrow">
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-secondary uppercase tracking-wider mb-3">
-            Módulos
+            Principais Módulos
           </p>
           <h2 className="text-heading md:text-display-sm text-primary-foreground mb-4">
-            Tudo que a operação precisa.{" "}
-            <span className="text-secondary">Nada que não precisa.</span>
+            Tudo o que acontece em campo,{" "}
+            <span className="text-secondary">organizado para decisão.</span>
           </h2>
-          <p className="text-body-lg text-primary-foreground/70 max-w-2xl mx-auto">
-            Cada módulo foi desenhado para resolver um problema real do dia a dia 
-            de quem gerencia execução no varejo.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

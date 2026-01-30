@@ -23,13 +23,12 @@ const HeroSection = () => {
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-8 text-balance leading-tight">
-            Controle total da sua{" "}
-            <span className="text-secondary">operação de campo.</span>
+            Execução em campo é cara demais para{" "}
+            <span className="text-secondary">virar planilha solta.</span>
           </h1>
           
-          <p className="text-body-lg text-primary-foreground/80 mb-8 max-w-lg">
-            Um console criado para quem precisa decidir com base no que realmente 
-            acontece no ponto de venda. Sem ruído. Sem achismo.
+          <p className="text-body-lg text-primary-foreground/80 mb-8 max-w-xl">
+            O CIA é um console operacional criado a partir da rotina real de agências de trade, field, live marketing e eventos, para transformar ações físicas em dados confiáveis e decisões rápidas.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -39,11 +38,11 @@ const HeroSection = () => {
               asChild
             >
               <a 
-                href="https://wa.me/5511952855141?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20um%20representante%20sobre%20o%20CIA%20%E2%80%93%20Console%20Integrado%20de%20An%C3%A1lise.%20Podem%20entrar%20em%20contato%3F"
+                href="https://wa.me/5511952855141?text=Ol%C3%A1%2C%20gostaria%20de%20avaliar%20minha%20opera%C3%A7%C3%A3o%20com%20o%20CIA%20%E2%80%93%20Console%20Integrado%20de%20An%C3%A1lise.%20Podem%20entrar%20em%20contato%3F"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Solicitar Acesso
+                Avaliar minha operação
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
@@ -51,8 +50,15 @@ const HeroSection = () => {
               variant="outline" 
               size="lg"
               className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+              asChild
             >
-              Ver Demonstração
+              <a 
+                href="https://wa.me/5511952855141?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20um%20especialista%20sobre%20o%20CIA.%20Podem%20entrar%20em%20contato%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Conversar com especialista
+              </a>
             </Button>
           </div>
         </div>
