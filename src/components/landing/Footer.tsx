@@ -6,11 +6,11 @@ const Footer = () => {
       <div className="container-wide px-6 lg:px-12 py-12">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <img src={logoCia} alt="CIA Logo" className="h-9 w-auto object-contain" />
+          <div className="flex items-center gap-2">
+            <img src={logoCia} alt="CIA Logo" className="h-11 w-auto object-contain" />
             <div className="flex flex-col">
-              <span className="text-lg font-semibold tracking-tight">CIA</span>
-              <span className="text-[10px] text-primary-foreground/60 leading-none">
+              <span className="text-xl font-semibold tracking-tight leading-none">CIA</span>
+              <span className="text-[10px] text-primary-foreground/60 leading-tight mt-0.5">
                 Console Integrado de Análise
               </span>
             </div>
