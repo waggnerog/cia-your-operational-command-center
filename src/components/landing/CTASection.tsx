@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LeadCaptureModal from "./LeadCaptureModal";
 
 const CTASection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="section-padding">
       <div className="container-narrow">
@@ -22,35 +26,25 @@ const CTASection = () => {
               <Button 
                 size="lg" 
                 className="bg-secondary text-secondary-foreground hover:bg-teal-dark group"
-                asChild
+                onClick={() => setIsModalOpen(true)}
               >
-                <a 
-                  href="https://wa.me/5511952855141?text=Ol%C3%A1%2C%20gostaria%20de%20avaliar%20minha%20opera%C3%A7%C3%A3o%20com%20o%20CIA%20%E2%80%93%20Console%20Integrado%20de%20An%C3%A1lise.%20Podem%20entrar%20em%20contato%3F"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Avaliar minha operação
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </a>
+                Avaliar minha operação
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
                 className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
-                asChild
+                onClick={() => setIsModalOpen(true)}
               >
-                <a 
-                  href="https://wa.me/5511952855141?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20com%20um%20especialista%20sobre%20o%20CIA.%20Podem%20entrar%20em%20contato%3F"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Conversar com especialista
-                </a>
+                Conversar com especialista
               </Button>
             </div>
           </div>
         </div>
       </div>
+
+      <LeadCaptureModal open={isModalOpen} onOpenChange={setIsModalOpen} />
     </section>
   );
 };
