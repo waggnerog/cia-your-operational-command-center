@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/dialog";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import { supabase } from "@/integrations/supabase/client";
 
 const WHATSAPP_NUMBER = "5511952855141";
 const WHATSAPP_MESSAGE = encodeURIComponent(
@@ -80,10 +81,27 @@ const LeadCaptureModal = ({ open, onOpenChange }: LeadCaptureModalProps) => {
       return;
     }
 
-    // Simulate form submission (in production, this would send to a backend)
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    // Save lead to database
+    const { error } = await supabase.from("leads").insert({
+      name: result.data.name,
+      email: result.data.email,
+      phone: result.data.phone,
+      company: result.data.company || null,
+      message: result.data.message || null,
+      source: "website",
+    });
 
     setIsSubmitting(false);
+
+    if (error) {
+      toast({
+        title: "Erro ao enviar",
+        description: "Ocorreu um erro ao enviar seus dados. Tente novamente.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     setStep("success");
 
     toast({
